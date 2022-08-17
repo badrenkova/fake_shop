@@ -21,7 +21,7 @@ export const Product = ({ product }: ProductProps) => {
       </button>
       {details && <p>{product.description}</p>}
       <p>
-        Rate: <span style={{ fontWeight: 'bold' }}>{product.rating.rate}</span>
+        Rate: <span style={{ fontWeight: 'bold' }}>{product?.rating?.rate}</span>
       </p>
     </div>
   );
